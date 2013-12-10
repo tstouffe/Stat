@@ -19,6 +19,18 @@
     <%= f.label :Email %><br>
     <%= f.text_field :email %>
   </p>
+  
+  <p>
+ <%= link_to 'Add Work Experience', new_profile_work_path(@profile) %>
+ </p>
+ 
+   <p>
+ <%= link_to 'Add School Experience', new_profile_school_path(@profile) %>
+ </p>
+ 
+   <p>
+ <%= link_to 'Add Proficiencies', new_profile_proficiency_path(@profile) %>
+ </p>
 	
   <p>
     <%= f.submit "Update", class: 'btn btn-primary' %>
