@@ -1,0 +1,14 @@
+<%= form_for([@post, @post.comments.build]) do |f| %>
+
+  <div class="form-group">
+	  <%= f.label :User %>
+	<%= @post.user.first_name %>
+  </div>
+  <div class="form-group">
+  	<%= f.label :body %>
+  	<%= f.text_area :body, class: 'form-control', rows: '6' %>
+  </div>
+  <div class="form-group">
+  	<%= f.submit class: 'btn btn-primary' %>
+  </div>
+<% end %>
