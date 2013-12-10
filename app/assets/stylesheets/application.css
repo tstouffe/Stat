@@ -11,14 +11,3 @@
  *= require_self
  *= require_tree .
  */
-
-.field_with_errors label {
-	color: red;
-	font-weight: bold;
-}
-.field_with_errors input, .field_with_errors textarea {
-	border: 2px solid red;
-}
-.post-title {
-	min-width: 200px;
-}
