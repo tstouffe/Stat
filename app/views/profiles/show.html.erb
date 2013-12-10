@@ -1,3 +1,5 @@
+<body>
+  <div class="container">
 <h2> <%= @profile.name %>'s Profile </h2>
 
 <p>
@@ -25,5 +27,7 @@
 </p>
 
 
-<%= link_to 'Back to Profiles', profiles_path %>
-<%= link_to 'Edit', edit_profile_path(@profile) %> 
+<%= link_to 'Back to Profiles', profiles_path, class: 'btn btn-primary' %>
+<%= link_to 'Edit', edit_profile_path(@profile), class: 'btn btn-warning' %> 
+</div>
+</body>

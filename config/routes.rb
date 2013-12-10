@@ -1,12 +1,12 @@
-<<<<<<< HEAD
-Blog::Application.routes.draw do
+#<<<<<<< HEAD
+#Blog::Application.routes.draw do
   
-  resources :users
+#  resources :users
   
-  devise_for :users
+#  devise_for :users
   
-  root 'users#index'
-=======
+#  root 'users#index'
+#=======
 Stat::Application.routes.draw do
 
   devise_for :users
@@ -27,6 +27,6 @@ Stat::Application.routes.draw do
 	end
 	
 	root to: "profiles#index"
->>>>>>> 93f3d961054e01f321b6a96c225fbed2c8f7f258
+#>>>>>>> 93f3d961054e01f321b6a96c225fbed2c8f7f258
 
 end

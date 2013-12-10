@@ -11,11 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20131210080546) do
-=======
-ActiveRecord::Schema.define(version: 20131210100429) do
->>>>>>> 93f3d961054e01f321b6a96c225fbed2c8f7f258
+ActiveRecord::Schema.define(version: 20131210110429) do
+
+  create_table "comments", force: true do |t|
+    t.string   "commenter"
+    t.text     "body"
+    t.integer  "post_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "comments", ["post_id"], name: "index_comments_on_post_id"
 
   create_table "courses", force: true do |t|
     t.string   "name"
@@ -36,6 +42,14 @@ ActiveRecord::Schema.define(version: 20131210100429) do
   end
 
   add_index "duties", ["work_id"], name: "index_duties_on_work_id"
+
+  create_table "posts", force: true do |t|
+    t.string   "title"
+    t.text     "text"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+  end
 
   create_table "proficiencies", force: true do |t|
     t.string   "name"
@@ -67,6 +81,22 @@ ActiveRecord::Schema.define(version: 20131210100429) do
 
   add_index "schools", ["profile_id"], name: "index_schools_on_profile_id"
 
+  create_table "taggings", force: true do |t|
+    t.integer  "post_id"
+    t.integer  "tag_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "taggings", ["post_id"], name: "index_taggings_on_post_id"
+  add_index "taggings", ["tag_id"], name: "index_taggings_on_tag_id"
+
+  create_table "tags", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -78,16 +108,10 @@ ActiveRecord::Schema.define(version: 20131210100429) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-<<<<<<< HEAD
-    t.integer  "user_id"
-    t.string   "user_phone"
-    t.string   "user_address"
-=======
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "first_name"
     t.string   "last_name"
->>>>>>> 93f3d961054e01f321b6a96c225fbed2c8f7f258
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
