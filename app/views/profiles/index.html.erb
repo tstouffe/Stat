@@ -2,9 +2,9 @@
 
 <p>
 	<% @profiles.each do |profile| %>
-	
+		<table>
 		<%=  link_to profile.name, profile_path(profile) %>
-		
+		</table>
 	<% end %>
 </p>
 
