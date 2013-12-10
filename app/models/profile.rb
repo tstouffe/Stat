@@ -1,4 +1,6 @@
 class Profile < ActiveRecord::Base
+  
+  has_one :user
 
 	has_many :works, dependent: :destroy
 		has_many :names, through: :works

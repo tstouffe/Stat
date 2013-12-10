@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   
   def index
-    @user = current_user
+    @users = User.all
   end
 
   def new
@@ -39,20 +39,6 @@ class UsersController < ApplicationController
     @user.destroy
   end
 
-  def sign_in
-    @user = User.new
-  end
-  
-  def auth
-    @user = User.find_by_email( params[:user][:email] )
-    unless @user.nil?
-      if @user.password == params[:user][:password]
-        redirect_to posts_path
-        return
-      end
-    end
-    redirect_to sign_in_path
-  end
   
   private
     def user_params
