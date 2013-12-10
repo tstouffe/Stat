@@ -1,0 +1,14 @@
+<h2><%= @user.first_name %><%= @user.last_name %></h2>
+<p>
+</p>
+<table class="table table-bordered">
+	<tr>
+		<th>Name</th>
+		<th>Email</th>
+	</tr>
+	<tr>
+		<td><%= @user.first_name %></td>
+		<td><%= @user.email %></td>
+	</tr>
+</table>
+	<%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'btn btn-default' %>
