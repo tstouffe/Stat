@@ -1,9 +1,9 @@
 Blog::Application.routes.draw do
   
+  resources :users
+  
   devise_for :users
   
-  root 'users#profile'
-  
-  resources :users
+  root 'users#index'
 
 end
