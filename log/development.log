@@ -11204,5 +11204,151 @@ Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2013-12-10 03:46:03 -0700
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-10 03:46:03 -0700
-  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-10 04:51:14 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProfilesController#index as HTML
+  [1m[35mProfile Load (1.0ms)[0m  SELECT "profiles".* FROM "profiles"
+  Rendered profiles/index.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 496ms (Views: 378.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-10 04:51:15 -0700
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-12-10 04:51:15 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-10 04:51:15 -0700
+
+
+Started GET "/assets/duties.css?body=1" for 127.0.0.1 at 2013-12-10 04:51:15 -0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2013-12-10 04:51:15 -0700
+
+
+Started GET "/assets/proficiencies.css?body=1" for 127.0.0.1 at 2013-12-10 04:51:15 -0700
+
+
+Started GET "/assets/schools.css?body=1" for 127.0.0.1 at 2013-12-10 04:51:15 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-12-10 04:51:15 -0700
+
+
+Started GET "/assets/works.css?body=1" for 127.0.0.1 at 2013-12-10 04:51:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:16 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:16 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:16 -0700
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:16 -0700
+
+
+Started GET "/assets/proficiencies.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:16 -0700
+
+
+Started GET "/assets/duties.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:16 -0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:16 -0700
+
+
+Started GET "/assets/schools.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:16 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:16 -0700
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:16 -0700
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-12-10 04:51:18 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (2.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (166.0ms)
+Completed 200 OK in 202ms (Views: 194.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-12-10 04:51:18 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-10 04:51:18 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-10 04:51:18 -0700
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-12-10 04:51:18 -0700
+
+
+Started GET "/assets/duties.css?body=1" for 127.0.0.1 at 2013-12-10 04:51:18 -0700
+
+
+Started GET "/assets/proficiencies.css?body=1" for 127.0.0.1 at 2013-12-10 04:51:19 -0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2013-12-10 04:51:19 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-12-10 04:51:19 -0700
+
+
+Started GET "/assets/schools.css?body=1" for 127.0.0.1 at 2013-12-10 04:51:19 -0700
+
+
+Started GET "/assets/works.css?body=1" for 127.0.0.1 at 2013-12-10 04:51:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:19 -0700
+
+
+Started GET "/assets/duties.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:19 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:19 -0700
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:19 -0700
+
+
+Started GET "/assets/proficiencies.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:19 -0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:19 -0700
+
+
+Started GET "/assets/schools.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:19 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:19 -0700
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-10 04:51:19 -0700
