@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131024153732) do
+ActiveRecord::Schema.define(version: 20131210080546) do
 
   create_table "comments", force: true do |t|
     t.string   "commenter"
@@ -64,6 +64,8 @@ ActiveRecord::Schema.define(version: 20131024153732) do
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
     t.integer  "user_id"
+    t.string   "user_phone"
+    t.string   "user_address"
   end
 
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
