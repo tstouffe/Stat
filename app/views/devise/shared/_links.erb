@@ -1,9 +1,11 @@
 <%- if controller_name != 'sessions' %>
   <%= link_to "Sign in", new_session_path(resource_name), class: 'btn btn-default' %>
+  <%= link_to "Cancel", profile_path(@profile), class: 'btn btn-default' %>
 <% end -%>
 
 <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
   <%= link_to "Sign up", new_registration_path(resource_name), class: 'btn btn-default' %>
+  <%= link_to "Cancel", profile_path(@profile), class: 'btn btn-default' %>
 <% end -%>
 
 <br /></p>

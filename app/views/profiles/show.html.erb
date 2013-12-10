@@ -1,0 +1,29 @@
+<h2> <%= @profile.name %>'s Profile </h2>
+
+<p>
+<strong> Phone: </strong> <%= @profile.phone %>
+</p>
+
+<p>
+<strong> Address: </strong> <%= @profile.address %>
+</p>
+
+<p>
+<strong> Email: </strong> <%= @profile.email %>
+</p>
+
+<p>
+<strong> Work Experience </strong>
+</p>
+
+<p>
+<strong> School Experience </strong>
+</p>
+
+<p>
+<strong> Proficiencies </strong>
+</p>
+
+
+<%= link_to 'Back to Profiles', profiles_path %>
+<%= link_to 'Edit', edit_profile_path(@profile) %> 
