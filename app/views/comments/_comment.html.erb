@@ -1,9 +1,0 @@
-<div class = "form-group">
-<p>
-  Created by: <%= @post.user.first_name %><br />
-  <%= comment.body %><br /><p/><div/>
-  <%= link_to 'Destroy Comment', [comment.post, comment],
-  				class: 'btn btn-default',
-                method: :delete,
-                data: { confirm: 'Are you sure?' } %>
-</p>
